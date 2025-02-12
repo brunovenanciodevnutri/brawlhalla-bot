@@ -26,9 +26,9 @@ class primeirobot(discord.Client):
 
 bot = primeirobot()
 
-@bot.tree.command(name="status", description='Show the status of a brawlhalla player.')
+@bot.tree.command(name="stats", description='Show the stats of a brawlhalla player.')
 @app_commands.describe(player="Enter player name.")
-async def status(interaction: discord.interactions, player: str):
+async def stats(interaction: discord.interactions, player: str):
     embed = discord.Embed(
         title="🔍 Searching...",
         color=cor,
